@@ -1,5 +1,3 @@
-# Android-Object-Detection
-[![Build Status](https://travis-ci.org/dodungvu/Android-Object-Detection.png)](https://travis-ci.org/dodungvu/Android-Object-Detection)
 
 ## Requirements
 * Android 4.0+ support
@@ -10,12 +8,6 @@
 
 * Build with Gradle. You can use Android studio to build
 
-## Feature
-* [Object detection - Region-based Convolutional Networks detection](http://arxiv.org/abs/1504.08083)
-[Selective Search on Android](https://github.com/dodungvu/dlib-android) + [FastRCNN](https://github.com/rbgirshick/caffe-fast-rcnn)
-
-* [Scene recognition - Convolutional neural networks trained on Places](http://places.csail.mit.edu/downloadCNN.html)
- Input a picture of a place or scene and predicts it.
 
 ## Demo
 
@@ -23,11 +15,6 @@
 
 ![](demo/2.png)
 
-![](demo/3.png)
-
-![](demo/4.png)
-
-![](demo/5.png)
 
 ## Usage 
 
@@ -41,29 +28,12 @@
 
 ` $ adb install -r ./app/build/outputs/apk`
 
-Besides, you can change deep learning's model, weight, etc in VisionClassifierCreator.java
-``` java
 
-public class VisionClassifierCreator {
-    private final static String SCENE_MODEL_PATH = "..";
-    private final static String SCENE_WIEGHTS_PATH = "..";
-    private final static String SCENE_MEAN_FILE = "..";
-    private final static String SCENE_SYNSET_FILE = "..";
-
-    private final static String DETECT_MODEL_PATH = "..";
-    private final static String DETECT_WIEGHTS_PATH = "..";
-    private final static String DETECT_MEAN_FILE = "..";
-    private final static String DETECT_SYNSET_FILE = "..";
- }
 ``` 
 
-## Contribution
-* Send pull request
-* <a href='https://ko-fi.com/A4263TV2' target='_blank'><img height='36' style='border:0px;height:36px;' src='https://az743702.vo.msecnd.net/cdn/kofi1.png?v=0' border='0' alt='Buy Me a Coffee at ko-fi.com' /></a>
 
 ## License
 
-	    Copyright (C) 2015-2016 dodungvu
 	
 	Licensed under the Apache License, Version 2.0 (the "License");
 	you may not use this file except in compliance with the License.
